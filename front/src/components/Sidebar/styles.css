@@ -1,0 +1,9 @@
+.sidebar{
+    background-color:rgba(67,67,67,1);
+    width: var(--sidebar-width);
+    max-width: var(--sidebar-width);
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 100vh
+}

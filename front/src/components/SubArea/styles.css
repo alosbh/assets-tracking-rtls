@@ -1,0 +1,25 @@
+.subarea-container{
+    display: inline-table;
+    margin:20px 0px 0px 20px
+}
+
+.subarea-container h4{
+    background-color:#6f6f6f;
+    padding: 4px;
+    margin: 0px;
+    color: #d7d7d7;
+    font-size: 17px;
+    font-family: Arial, sans-serif,Helvetica, 'Gill Sans' , Lucida,  'Helvetica Narrow'
+
+}
+
+.subarea-container .canvas-container{
+    position: relative;
+}
+.subarea-container div canvas{
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+

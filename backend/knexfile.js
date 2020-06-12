@@ -1,0 +1,51 @@
+// Update with your config settings.
+
+module.exports = {
+
+  development: {
+    client: 'sqlite3',
+    connection: {
+      filename: './src/database/db.sqlite3'
+    },
+    migrations:{
+      directory:'./src/database/migrations'
+    },
+    useNullAsDefault: true,
+  },
+
+  staging: {
+    client: 'mssql',
+    connection: {
+      host: 'BRBELM0DSQL80',
+      database: 'BeaconServer',
+      user:     'BEACON_USER',
+      password: 'BEACON_USER'
+    },
+    pool: {
+      min: 2,
+      max: 10
+    },
+    migrations: {
+      directory:'./src/database/migrations'
+      // tableName: 'knex_migrations'
+    },
+    useNullAsDefault: true,
+  },
+
+  production: {
+    client: 'postgresql',
+    connection: {
+      database: 'my_db',
+      user:     'username',
+      password: 'password'
+    },
+    pool: {
+      min: 2,
+      max: 10
+    },
+    migrations: {
+      tableName: 'knex_migrations'
+    }
+  }
+
+};

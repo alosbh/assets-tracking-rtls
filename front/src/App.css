@@ -1,0 +1,16 @@
+:root{
+  --sidebar-width:250px
+}
+
+body {
+  margin: 0;
+}
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+.content{
+  background-color:rgb(245,245,245);
+}
+.content .main-page{
+  display: flex;
+}

@@ -1,0 +1,89 @@
+.beacon-container{
+    
+    position:absolute;
+    left: -15px;
+    top: -23px;
+    align-items: center;
+    display: flex;
+    flex-direction: column
+    
+}
+
+.beacon-dot{
+    
+    
+    height: 45px;
+    width: 35px;
+    
+
+    
+}
+.beacon-dot img{
+    
+    
+    height: 45px;
+    width: 30px;
+    
+    
+
+    
+}
+
+.beacon-dot:active{
+    pointer-events: none;
+}
+.beacon-dot:hover .beacon-label{
+    
+    
+    pointer-events: all !important;
+    display: block;
+    
+
+}
+.beacon-label{
+    position: absolute;
+    font-size: 10px;
+    font-weight: 500;
+    color:white;
+    padding: 8px;
+    background-color: rgba(240,20,90,0.7);
+    border-radius: 4px;
+    margin: 0px;
+    left:-40px;
+    top:60px;
+    width: 120px;
+    text-align: center;
+    border: 2px solid black;
+    display: none;
+    
+}
+.blob {
+    position: absolute;
+	 background: transparent;
+	border-radius: 50%;
+	margin: 5px;
+	height: 15px;
+	width: 15px;
+    left: 2px;
+    top: 12px;
+	box-shadow: 0 0 0 0 rgba(236, 31, 126, 1);
+	transform: scale(1);
+	animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(1.4);
+		box-shadow: 0 0 0 0 rgba(236, 31, 126, 0.7);
+	}
+
+	70% {
+		transform: scale(1.5);
+		box-shadow: 0 0 0 10px rgba(236, 31, 126, 0);
+	}
+
+	100% {
+		transform: scale(1.4);
+		box-shadow: 0 0 0 0 rgba(236, 31, 126, 0);
+	}
+}
